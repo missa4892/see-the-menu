@@ -46,6 +46,7 @@ export async function POST(req: NextRequest) {
               type: 'image_url',
               image_url: {
                 url: `data:${mimeType};base64,${base64Image}`,
+                detail: 'low',
               },
             },
           ],
