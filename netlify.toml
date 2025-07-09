@@ -12,3 +12,9 @@
 
 [[plugins]]
   package = "@netlify/plugin-nextjs"
+
+[functions]
+  # Increase the timeout for the Next.js server handler
+  # The name is determined by the plugin, often "__netlify-handler"
+  # Using a wildcard to catch the correct handler name
+  "*-handler"["timeout"] = 25
