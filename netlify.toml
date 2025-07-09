@@ -1,0 +1,14 @@
+# netlify.toml
+
+[build]
+  command = "npm run build"
+
+[build.environment]
+  # Add your environment variables here for the build process
+  # For example:
+  # IMAGE_API_KEY = "your_openai_api_key_here"
+  # GOOGLE_API_KEY = "your_google_api_key_here"
+  # GOOGLE_CX = "your_google_custom_search_engine_id_here"
+
+[[plugins]]
+  package = "@netlify/plugin-nextjs"
